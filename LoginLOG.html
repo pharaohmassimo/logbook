@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Log in</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		
+		<style type="text/css">
+			html, body{
+		    background-color: grey;
+			box-sizing: border-box;
+			overflow-x: hidden;
+		}
+			.form-signin {
+  							width: 100%;
+  							max-width: 330px;
+  							padding: 15px;
+  							margin: 0 auto;
+  							border: 1px solid white;
+  							margin-top: 100px;
+  							background-color: #444;
+					}
+
+					.form-signin .checkbox {
+  							font-weight: 400;
+							}
+						.form-signin .form-control {
+  							position: relative;
+  							box-sizing: border-box;
+  							height: auto;
+  							padding: 10px;
+  							font-size: 16px;
+							}
+						.form-signin .form-control:focus {
+  							z-index: 2;
+							}
+
+							label{
+								color: white;
+							}
+
+							#forg{
+							 color: white;
+							}
+
+
+		</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<form class="form-signin" method='POST' action="">
+			
+		<div class="form-group">
+      		
+     		 <label id="user" class="control-label col-sm-2">USERNAME:</label><input name="username" type="text" id="user_" class="form-control" placeholder="Your username here" required autofocus>
+
+      	</div>
+
+      	<div class="form-group">
+      		 <label id="password" class="control-label col-sm-2" for="pwd">PASSWORD:</label>
+     		 <input name="password" type="password" id="pwd" class="form-control" placeholder="Your password here" required>
+        <i id="eye" class="fa fa-eye"  onclick="togglePass()"></i>  <!--eye icon-->
+     	</div>
+
+     	<p>
+   		 <label class="radio-inline">
+      		<input type="radio" name="optradio">Academic Supervisor
+    	 </label>
+    	</p>
+    	<p>
+    	 <label class="radio-inline">
+      		<input type="radio" name="optradio">Industrial Supervisor
+    	 </label>
+    	</p>
+    	<p>
+    	  <label class="radio-inline">
+      		<input type="radio" name="optradio" checked>Student
+    	 </label>
+    	</p>
+
+      <div class="checkbox">
+        <label id="remember">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+
+      <button class="btn btn-default" type="submit" name="login_user">Sign in</button>
+      <p id="forgot"><a id="forg" href="#">forgot password?</a> 
+    </form>
+</div>
+		</form>
+	</div>
+</body>
+</html>
